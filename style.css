@@ -1,0 +1,58 @@
+/*Note: there are 2 !important selectors in the css below: both are in the style of .btn-primary:hover */
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed; /*it means: don't repeat the image, keep it centered, eep it fixed(can stretch etc.)*/ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #e2dbdb;
+}
+
+hr {
+    margin: 20px auto;
+    color: #F05F44;
+    border: 3px solid #F05F44;
+    max-width: 65px;
+    opacity: 1;  /*1 means fully visible, 0 means invisible*/
+}
+
+.btn {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: #F05F44;
+  border-color: #F05F44;
+}
+
+.btn-primary:hover {
+  background-color: #ee4b08 !important;
+  border-color: #ee4b08 !important;
+  border-width: 4px;
+}
+/*.btn-primary {  
+    background-color: #F05F44;  
+    border-color: #F05F44;  
+    --bs-btn-hover-bg: #ee4b08; 
+    --bs-btn-hover-border-color: #ee4b08;
+} 
+--> The lines above could solve the hover issue as well*/
+
+.buffer {
+  height: 10rem;
+}
